@@ -1,0 +1,100 @@
+html {
+    overflow-y: scroll;
+}
+
+h3 {
+    padding-top: 50px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+p {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom:80px;
+}
+
+.blog1 {
+    margin: 100px 50px 50px 100px;
+    border: 5px solid skyblue;
+    border-radius: 4px;
+    background: lightslategrey;
+}
+
+.blog2 {
+    margin: 0px 50px 50px 100px;
+    border: 5px solid skyblue;
+    border-radius: 4px;
+    background: lightslategrey;
+}
+
+.blog3 {
+    margin: 0px 50px 0px 100px;
+    border: 5px solid skyblue;
+    border-radius: 4px;
+    background: lightslategrey;
+}
+
+.navbar {
+    background-color: #494949;
+    position: fixed;
+    top: 0;
+    left: 60%;
+    width: 40%;
+    z-index: 9999;
+    height: 100vh;
+    transition: 1.5s ease-in-out;
+}
+
+.navbar ul {
+    display: block;
+    list-style: none;
+    text-align: center;
+    transform: translateY(50%);
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 60px;
+    padding: 0px 0px;
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+    color: skyblue;
+}
+
+#clicked .on {
+    display: block;
+}
+
+#clicked .off {
+    display: none;
+}
+
+#clicked:target .navbar {
+    display: block;
+    transform: translate(100%, 0);
+    transition: all 1.5s ease-in-out;
+}
+
+#clicked:target .on {
+    display: none;
+}
+
+#clicked:target .off {
+    display: block;
+}
+
+#menu,
+#close {
+    color: whitesmoke;
+    font-size: 60px;
+    padding-top: 5%;
+    transform: translateX(750%);
+}
+
+footer {
+    font-size: 45px;
+}

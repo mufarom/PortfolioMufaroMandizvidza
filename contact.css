@@ -1,0 +1,133 @@
+h1 {
+    color: skyblue;
+    text-align: center;
+    text-decoration: underline;
+    transform: translateY(250%);
+}
+
+p {
+    position: sticky;
+}
+
+section p {
+    transform: translateY(300%);
+    font-size: xx-large;
+    color: whitesmoke;
+    text-align: center;
+}
+
+section {
+    text-align: center;
+    transform: translateX(25%);
+}
+
+body {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-areas: "nav nav"
+        "section main"
+        "footer footer";
+}
+
+h2 {
+    color: skyblue;
+    font-size: xx-large;
+    text-decoration: underline;
+    transform: translateY(250%);
+}
+
+form {
+    transform: translateY(30%);
+    text-align: center;
+    grid-area: main;
+}
+
+input[type=text],
+select {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 50%;
+    background-color: skyblue;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+}
+
+input[type=submit]:hover {
+    background-color: lightblue;
+}
+
+textarea {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.breakLine {
+    border-left: 3px solid skyblue;
+    height: 400px;
+    position: fixed;
+    left: 50%;
+    right: 50%;
+    margin-left: -3px;
+    margin-right: -3px;
+    top: 0;
+    transform: translateY(40%);
+    border-radius: 2px
+}
+
+img {
+    max-width: 5%;
+    max-height: 5%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #494949;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    margin: 15px 0px;
+}
+
+.navbar ul li {
+    font-family: 'Teko', sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 50px 50px;
+}
+
+.navbar ul li a:hover {
+    color: skyblue;
+    text-decoration: underline;
+}
+
+#clicked .on,
+.off {
+    display: none;
+}

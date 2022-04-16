@@ -1,0 +1,173 @@
+html {
+    overflow-y: scroll;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas: "nav"
+        "main"
+        "section"
+        "footer";
+}
+
+form {
+    transform: translateY(15%);
+    text-align: center;
+    grid-area: main;
+}
+
+h1 {
+    font-size: 55px;
+    color: skyblue;
+    text-align: center;
+    text-decoration: underline;
+    transform: translateY(100%);
+}
+
+h2 {
+    color: skyblue;
+    font-size: 55px;
+    text-decoration: underline;
+    text-align: center;
+    transform: translateY(150%);
+}
+
+section p {
+    font-size: 50px;
+    color: whitesmoke;
+    text-align: center;
+    transform: translateY(150%);
+}
+
+.breakLine {
+    display: none;
+}
+
+input[type=text],
+select {
+    width: 70%;
+    padding: 20px 30px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 50%;
+    background-color: skyblue;
+    color: white;
+    padding: 15px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+}
+
+input[type=submit]:hover {
+    background-color: lightblue;
+}
+
+textarea {
+    width: 70%;
+    padding: 25px 30px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+main {
+    grid-area: main;
+}
+
+img {
+    max-width: 5%;
+    max-height: 5%;
+}
+
+#call,
+#email {
+    font-size: 50px;
+}
+
+section {
+    grid-area: section;
+}
+
+.navbar {
+    background-color: #494949;
+    position: fixed;
+    top: 0;
+    left: 60%;
+    width: 40%;
+    z-index: 9999;
+    height: 100vh;
+    transition: 1.5s ease-in-out;
+}
+
+.navbar ul {
+    display: block;
+    list-style: none;
+    text-align: center;
+    transform: translateY(50%);
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 60px;
+    padding: 0px 0px;
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+    color: grey;
+}
+
+#clicked .on {
+    display: block;
+}
+
+#clicked .off {
+    display: none;
+}
+
+#clicked:target .navbar {
+    display: block;
+    transform: translate(100%, 0);
+    transition: all 1.5s ease-in-out;
+}
+
+#clicked:target .on {
+    display: none;
+}
+
+#clicked:target .off {
+    display: block;
+}
+
+#menu,
+#close {
+    color: whitesmoke;
+    font-size: 60px;
+    padding-top: 5%;
+    transform: translateX(750%);
+}
+
+footer {
+    font-size: 45px;
+}
+
+#name,
+#email_address,
+#subject,
+#company,
+#message,
+#submit {
+    font-size: 35px;
+}
